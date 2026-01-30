@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bản đồ tương tác Làng nghề Hà Tĩnh</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec7f13",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#221910",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: "Plus Jakarta Sans", sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#1b140d] dark:text-white antialiased">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-[#f3ede7] dark:border-[#3a2d1f] bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md px-10 py-3">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-[#1b140d] dark:text-white">
+<div class="size-8 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Làng nghề Hà Tĩnh</h2>
+</div>
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Trang chủ</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Sản phẩm</a>
+<a class="text-primary text-sm font-bold" href="#">Bản đồ</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Tin tức</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Liên hệ</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="flex items-center justify-center p-2 rounded-full hover:bg-primary/10">
+<span class="material-symbols-outlined">person</span>
+</button>
+<button class="flex min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold shadow-lg hover:bg-primary/90 transition-all">
+<span>Đăng nhập</span>
+</button>
+</div>
+</header>
+<main class="flex h-[calc(100vh-64px)] overflow-hidden">
+<!-- Side Navigation Bar (Left Sidebar) -->
+<aside class="w-80 border-r border-[#f3ede7] dark:border-[#3a2d1f] bg-[#fcfaf8] dark:bg-[#1a130c] flex flex-col">
+<div class="p-4 flex flex-col gap-4">
+<div class="flex flex-col">
+<h1 class="text-[#1b140d] dark:text-white text-lg font-bold leading-normal">Làng nghề truyền thống</h1>
+<p class="text-[#9a734c] text-xs font-normal leading-normal">Di sản văn hóa nghìn năm Hà Tĩnh</p>
+</div>
+<!-- Search Input -->
+<div class="flex items-center bg-[#f3ede7] dark:bg-[#2d2319] rounded-lg px-3 py-2">
+<span class="material-symbols-outlined text-[#9a734c] text-xl">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-full placeholder:text-[#9a734c] dark:text-white" placeholder="Tìm kiếm làng nghề..." type="text"/>
+</div>
+<!-- Category Chips -->
+<div class="flex gap-2 overflow-x-auto pb-2 no-scrollbar">
+<button class="flex h-7 shrink-0 items-center justify-center gap-1 rounded-full bg-primary text-white px-3 text-xs font-medium">
+                        Tất cả
+                    </button>
+<button class="flex h-7 shrink-0 items-center justify-center gap-1 rounded-full bg-[#f3ede7] dark:bg-[#2d2319] px-3 text-xs font-medium">
+                        Mộc
+                    </button>
+<button class="flex h-7 shrink-0 items-center justify-center gap-1 rounded-full bg-[#f3ede7] dark:bg-[#2d2319] px-3 text-xs font-medium">
+                        Rèn
+                    </button>
+<button class="flex h-7 shrink-0 items-center justify-center gap-1 rounded-full bg-[#f3ede7] dark:bg-[#2d2319] px-3 text-xs font-medium">
+                        Dệt
+                    </button>
+</div>
+</div>
+<!-- List of Craft Villages -->
+<div class="flex-1 overflow-y-auto px-2 space-y-1 custom-scrollbar">
+<!-- Thai Yen -->
+<div class="flex items-center gap-3 px-3 py-3 rounded-xl bg-primary/10 border border-primary/20 cursor-pointer">
+<div class="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">carpenter</span>
+</div>
+<div class="flex-1">
+<p class="text-[#1b140d] dark:text-white text-sm font-bold">Thái Yên</p>
+<p class="text-[#9a734c] text-xs">Nghề mộc đồ gia dụng</p>
+</div>
+<span class="material-symbols-outlined text-primary text-lg">chevron_right</span>
+</div>
+<!-- Trung Luong -->
+<div class="flex items-center gap-3 px-3 py-3 rounded-xl hover:bg-[#f3ede7] dark:hover:bg-[#2d2319] cursor-pointer transition-colors">
+<div class="w-10 h-10 rounded-lg bg-[#f3ede7] dark:bg-[#2d2319] flex items-center justify-center text-[#1b140d] dark:text-white">
+<span class="material-symbols-outlined">handyman</span>
+</div>
+<div class="flex-1">
+<p class="text-[#1b140d] dark:text-white text-sm font-medium">Trung Lương</p>
+<p class="text-[#9a734c] text-xs">Nghề rèn truyền thống</p>
+</div>
+</div>
+<!-- Chau Ha -->
+<div class="flex items-center gap-3 px-3 py-3 rounded-xl hover:bg-[#f3ede7] dark:hover:bg-[#2d2319] cursor-pointer transition-colors">
+<div class="w-10 h-10 rounded-lg bg-[#f3ede7] dark:bg-[#2d2319] flex items-center justify-center text-[#1b140d] dark:text-white">
+<span class="material-symbols-outlined">waves</span>
+</div>
+<div class="flex-1">
+<p class="text-[#1b140d] dark:text-white text-sm font-medium">Châu Hạ</p>
+<p class="text-[#9a734c] text-xs">Nghề dệt lụa, vải</p>
+</div>
+</div>
+<!-- Bao An -->
+<div class="flex items-center gap-3 px-3 py-3 rounded-xl hover:bg-[#f3ede7] dark:hover:bg-[#2d2319] cursor-pointer transition-colors">
+<div class="w-10 h-10 rounded-lg bg-[#f3ede7] dark:bg-[#2d2319] flex items-center justify-center text-[#1b140d] dark:text-white">
+<span class="material-symbols-outlined">potted_plant</span>
+</div>
+<div class="flex-1">
+<p class="text-[#1b140d] dark:text-white text-sm font-medium">Báo Ân</p>
+<p class="text-[#9a734c] text-xs">Nghề gốm đất nung</p>
+</div>
+</div>
+<!-- Cho Cau -->
+<div class="flex items-center gap-3 px-3 py-3 rounded-xl hover:bg-[#f3ede7] dark:hover:bg-[#2d2319] cursor-pointer transition-colors">
+<div class="w-10 h-10 rounded-lg bg-[#f3ede7] dark:bg-[#2d2319] flex items-center justify-center text-[#1b140d] dark:text-white">
+<span class="material-symbols-outlined">shopping_basket</span>
+</div>
+<div class="flex-1">
+<p class="text-[#1b140d] dark:text-white text-sm font-medium">Chợ Cầu</p>
+<p class="text-[#9a734c] text-xs">Nghề nón lá đặc sản</p>
+</div>
+</div>
+<!-- Nam Giang -->
+<div class="flex items-center gap-3 px-3 py-3 rounded-xl hover:bg-[#f3ede7] dark:hover:bg-[#2d2319] cursor-pointer transition-colors">
+<div class="w-10 h-10 rounded-lg bg-[#f3ede7] dark:bg-[#2d2319] flex items-center justify-center text-[#1b140d] dark:text-white">
+<span class="material-symbols-outlined">eco</span>
+</div>
+<div class="flex-1">
+<p class="text-[#1b140d] dark:text-white text-sm font-medium">Nam Giang</p>
+<p class="text-[#9a734c] text-xs">Làng nghề nón bài thơ</p>
+</div>
+</div>
+</div>
+<div class="p-4 bg-white dark:bg-[#1a130c] border-t border-[#f3ede7] dark:border-[#3a2d1f]">
+<button class="w-full flex cursor-pointer items-center justify-center rounded-lg h-10 px-4 bg-[#ec8013] text-white text-sm font-bold shadow hover:bg-opacity-90 transition-all">
+<span>Lọc theo huyện/thị</span>
+</button>
+</div>
+</aside>
+<!-- Map Section -->
+<div class="flex-1 relative bg-[#e5e7eb] dark:bg-[#120c08] overflow-hidden">
+<!-- Map Background Image -->
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-in-out" data-alt="Vintage topographic map of Ha Tinh province with detailed terrain" data-location="Ha Tinh Province, Vietnam" style="background-image: linear-gradient(rgba(248, 247, 246, 0.4), rgba(248, 247, 246, 0.4)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuAY8gZZJepQqhKaNyS78jD5mkMyW0DAdwGukgIQTEdHtcB58Am-IbaJMox38qrjNp-SDhYSqvVs8RcO0MW1BhKeX2-tg642aTDwmtcx9JrR5FB9uCmtWFEt7BUDibDNQkntRFXZr_VjOrlNvo2D9irkqTxO6hX_90Z7DHKzvR0D7Z0EZZ-BrlXGPVv0Lp4qpG6lkYctvUHV21sCCI5CsPAViBh60qqYWamOHjzvsLv6BW_vt8x7ksLvlbCqfIGSEUVxrK_BWybu8Tqq'); background-blend-mode: multiply;">
+</div>
+<!-- Custom Pins/Markers -->
+<!-- Marker: Thai Yen (Active) -->
+<div class="absolute top-1/2 left-1/3 -translate-x-1/2 -translate-y-1/2 group cursor-pointer z-20">
+<div class="relative flex flex-col items-center">
+<div class="bg-primary text-white p-2 rounded-full shadow-2xl scale-125 border-2 border-white animate-pulse">
+<span class="material-symbols-outlined text-2xl">carpenter</span>
+</div>
+<div class="bg-white/90 dark:bg-background-dark/90 px-2 py-1 rounded mt-1 shadow-sm border border-[#f3ede7] dark:border-[#3a2d1f]">
+<span class="text-[10px] font-bold uppercase tracking-wider dark:text-white">Thái Yên</span>
+</div>
+</div>
+</div>
+<!-- Marker: Trung Luong -->
+<div class="absolute top-[40%] left-[45%] group cursor-pointer hover:z-30">
+<div class="relative flex flex-col items-center">
+<div class="bg-white dark:bg-background-dark p-1.5 rounded-full shadow-lg border border-[#f3ede7] dark:border-[#3a2d1f] transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-lg text-primary">handyman</span>
+</div>
+</div>
+</div>
+<!-- Marker: Chau Ha -->
+<div class="absolute top-[60%] left-[55%] group cursor-pointer hover:z-30">
+<div class="relative flex flex-col items-center">
+<div class="bg-white dark:bg-background-dark p-1.5 rounded-full shadow-lg border border-[#f3ede7] dark:border-[#3a2d1f] transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-lg text-primary">waves</span>
+</div>
+</div>
+</div>
+<!-- Marker: Nam Giang -->
+<div class="absolute top-[75%] left-[40%] group cursor-pointer hover:z-30">
+<div class="relative flex flex-col items-center">
+<div class="bg-white dark:bg-background-dark p-1.5 rounded-full shadow-lg border border-[#f3ede7] dark:border-[#3a2d1f] transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-lg text-primary">shopping_basket</span>
+</div>
+</div>
+</div>
+<!-- Map Controls -->
+<div class="absolute bottom-6 right-6 flex flex-col gap-3">
+<div class="flex flex-col rounded-xl bg-white/90 dark:bg-background-dark/90 shadow-xl overflow-hidden backdrop-blur border border-white/20">
+<button class="p-3 hover:bg-primary/10 text-[#1b140d] dark:text-white border-b border-[#f3ede7] dark:border-[#3a2d1f]">
+<span class="material-symbols-outlined">add</span>
+</button>
+<button class="p-3 hover:bg-primary/10 text-[#1b140d] dark:text-white">
+<span class="material-symbols-outlined">remove</span>
+</button>
+</div>
+<button class="flex size-12 items-center justify-center rounded-xl bg-primary text-white shadow-xl hover:bg-primary/90 transition-all">
+<span class="material-symbols-outlined">my_location</span>
+</button>
+</div>
+<!-- Legend Overlay -->
+<div class="absolute top-6 right-6 bg-white/90 dark:bg-background-dark/90 p-3 rounded-xl shadow-xl backdrop-blur border border-white/20 w-40">
+<h4 class="text-[10px] font-bold uppercase text-[#9a734c] mb-2 tracking-widest">Chú thích</h4>
+<div class="space-y-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-primary">carpenter</span>
+<span class="text-[10px] font-medium dark:text-white">Nghề Mộc</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-primary">handyman</span>
+<span class="text-[10px] font-medium dark:text-white">Nghề Rèn</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-primary">shopping_basket</span>
+<span class="text-[10px] font-medium dark:text-white">Làng Nón</span>
+</div>
+</div>
+</div>
+<!-- Popup Information Card (Focused on Thai Yen) -->
+<div class="absolute top-1/2 left-[38%] -translate-y-1/2 max-w-sm w-full z-40 animate-fade-in shadow-2xl">
+<div class="bg-white dark:bg-[#1a130c] rounded-xl overflow-hidden shadow-2xl border border-white/20">
+<div class="h-48 bg-cover bg-center relative" data-alt="Artisans carving intricate patterns on a traditional wooden chest in Thai Yen village" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA9gjUih1injqfT10s4D_h23bhVBjtKmpRfiuD6F1DWZYt9A8G7OSwDqx7Wzs2Nvs6If0JADteBCjw3Ns-6lyq_ZCtNm_SAetsQas8KGWiCTP5_6UQdwE5BoOVPDNWxgpyn2CXN9_26w1UavQymNr-ZJg64FB6ArUK271JLNJJztWoydB3jQIO9z2YF3EkUt2FsJDHWXlZ4-HV8iMCIVP0nXPWN4Rm2efxEpBLDLMCeis3k8TScD6WmaGheYOM7Pd0fmBG4iznYYEDA')">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<h3 class="text-white text-xl font-bold">Làng nghề Thái Yên</h3>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-sm">location_on</span>
+<span class="text-xs text-white/90">Đức Thọ, Hà Tĩnh</span>
+</div>
+</div>
+<button class="absolute top-4 right-4 bg-white/20 backdrop-blur-md rounded-full p-1 text-white hover:bg-white/40">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="p-4">
+<p class="text-sm text-[#1b140d] dark:text-[#f3ede7] leading-relaxed mb-4">
+                            Nổi tiếng với nghề mộc truyền thống có từ hàng trăm năm trước. Các sản phẩm gỗ Thái Yên được yêu chuộng bởi sự tinh xảo, độ bền cao và mang đậm nét văn hóa truyền thống Việt Nam.
+                        </p>
+<div class="flex items-center justify-between gap-4">
+<button class="flex-1 flex items-center justify-center gap-2 rounded-lg h-10 bg-primary text-white text-sm font-bold shadow-md hover:bg-primary/90">
+<span class="material-symbols-outlined text-lg">directions</span>
+<span>Chỉ đường</span>
+</button>
+<button class="flex items-center justify-center rounded-lg h-10 w-10 border border-[#f3ede7] dark:border-[#3a2d1f] hover:bg-background-light dark:hover:bg-[#2d2319] dark:text-white">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Overlay Search (Mobile/Tablet helper) -->
+<div class="absolute top-6 left-6 @[480px]:hidden">
+<button class="bg-white p-3 rounded-full shadow-lg">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</main>
+<!-- Footer Status Bar -->
+<footer class="fixed bottom-0 left-0 w-full h-8 bg-white/90 dark:bg-background-dark/90 backdrop-blur border-t border-[#f3ede7] dark:border-[#3a2d1f] z-50 px-4 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<span class="flex items-center gap-1 text-[10px] text-[#9a734c] uppercase font-bold tracking-widest">
+<span class="size-2 rounded-full bg-green-500"></span>
+                Hệ thống trực tuyến
+            </span>
+<span class="text-[10px] text-[#9a734c]">Tọa độ: 18.3541° N, 105.7483° E</span>
+</div>
+<div class="text-[10px] text-[#9a734c]">© 2024 Di sản Làng nghề Hà Tĩnh - Sở Công thương Hà Tĩnh</div>
+</footer>
+</body></html>
